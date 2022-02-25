@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="Datepicker.js-master/dist/css/datepicker.material.css">
+    <link rel="stylesheet" href="Datepicker.js-master/dist/datepicker.js">
+    <script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
+    <title>Sandbox</title>
+</head>
+<body>
+    <div class="main_rec"
+    style="
+    margin: 100px;
+    display: grid;
+    row-gap: 20px;
+    "
+    >
+    <h1>Найдём номера под ваши пожелания</h1>
+    <div
+        style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        "
+    >
+            <div class="formtxt">
+                <h3>ПРИБЫТИЕ</h3>
+                <form>
+                    <input type="text" class="form" style="width: 150px;" placeholder="ДД.ММ.ГГГГ" />
+                </form>  
+            </div>
+            <div class="formtxt">
+                <h3>ВЫЕЗД</h3>
+                <form>
+                    <input type="text" class="form" style="width: 150px;" placeholder="ДД.ММ.ГГГГ" />
+                </form>  
+            </div>  
+    </div>
+        
+            <div class="formtxt">
+                <h3>ГОСТИ</h3>
+                <form>
+                    <input type="text" class="form" style="width: 320px;" placeholder="Сколько гостей" />
+                </form>  
+            </div>  
+            <a href="" class="reg">ПОДОБРАТЬ НОМЕР</a>
+    </div>
+    <div class="main_rec">
+        <form>
+            <p><select name="food" class="form">
+              <option value="r1" class="main_rec">Закуска Барская</option>
+            </select></p>
+           </form>
+    </div>
+    <input type="text" id="datepicker" style="margin: 100px;">
+    <div id="vk_comments"></div>
+<script type="text/javascript">
+  VK.Widgets.Comments('vk_comments');
+</script>
+    <script src="Datepicker.js-master/dst/datepicker.js"></script>
+    <script type="text/javascript">
+        VK.init({
+          apiId: ВАШ_API_ID,
+          onlyWidgets: true
+        });
+  </script>
+</body>
+</html>
